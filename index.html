@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업 앤 다운 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>업 앤 다운 게임</h1>
+        <p>1부터 100까지의 숫자 중 내가 생각한 숫자를 맞춰보세요!</p>
+        <label for="guess">숫자 입력:</label>
+        <input type="number" id="guess" min="1" max="100" placeholder="1-100">
+        <button id="checkButton">확인</button>
+        <p id="hint"></p>
+        <p id="attempts">시도 횟수: 0</p>
+        
+        <!-- 추가된 부분: 사용자가 입력한 숫자들이 나타날 영역 -->
+        <h3>입력한 숫자들:</h3>
+        <ul id="guessesList"></ul>
+
+        <button id="resetButton" style="display:none;">다시 시작</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

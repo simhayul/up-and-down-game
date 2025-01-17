@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input[type="number"] {
+    padding: 5px;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#hint {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#attempts {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* 추가된 부분: 사용자 입력 숫자 리스트 스타일 */
+#guessesList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#guessesList li {
+    margin-bottom: 5px;
+}
